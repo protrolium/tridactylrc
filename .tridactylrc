@@ -1,0 +1,52 @@
+" bovine3dom's dogfood
+
+" Provided only as an example.
+" Do not install/run without reading through as you may be surprised by some
+" of the settings.
+
+" May require the latest beta builds.
+
+" Move this to $XDG_CONFIG_DIR/tridactyl/tridactylrc (that's
+" ~/.config/tridactyl/tridactylrc to mere mortals) or ~/.tridactylrc and
+" install the native messenger (:installnative in Tridactyl). Run :source to
+" get it in the browser, or just restart.
+
+" NB: If you want "vim-like" behaviour where removing a line from
+" here makes the setting disappear, uncomment the line below.
+
+" sanitise tridactyllocal tridactylsync
+
+colorscheme dark
+
+"
+" Binds
+"
+bind m tabprev
+bind , tabnext
+bind = tabduplicate
+bind \ back
+bind | forward
+unbind J
+unbind K
+
+
+" Sane hinting mode
+set hintfiltermode vimperator-reflow
+set hintnames numeric
+
+"
+" Quickmarks
+"
+quickmark b https://gavingamboa.bandcamp.com/
+quickmark d http://diasp.org/aspects
+quickmark e https://www.evernote.com/Home.action
+quickmark f http://facebook.com/
+quickmark g http://github.com/protrolium
+quickmark k https://www.kadenze.com/
+quickmark p https://pod.orkz.net/
+quickmark r http://reddit.com/
+quickmark t http://translate.google.com/
+quickmark T http://tumblr.com/
+quickmark v http://vimeo.com/
+
+autocmd DocStart www.amazon.com js tri.excmds.urlmodify("-t", "www", "smile")
