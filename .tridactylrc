@@ -38,14 +38,20 @@ set hintnames numeric
 " Quickmarks
 "
 quickmark b https://gavingamboa.bandcamp.com/
-quickmark d http://diasp.org/aspects
+quickmark c https://beta.catalog.works/gavcloud
+quickmark d https://discord.com/
+quickmark D http://diasp.org/aspects
 quickmark e https://www.evernote.com/Home.action
-quickmark f http://facebook.com/
-quickmark g http://github.com/protrolium
+quickmark f https://facebook.com/
+quickmark g https://github.com/protrolium
+quickmark G https://gavart.ist/
+quickmark h https://hicetnunc.xyz/laskfarvortok/
 quickmark k https://www.kadenze.com/
-quickmark r http://reddit.com/
-quickmark t http://translate.google.com/
-quickmark T http://tumblr.com/
-quickmark v http://vimeo.com/
+quickmark r https://reddit.com/
+quickmark s https://sonomu.club/
+quickmark t https://translate.google.com/
+quickmark T https://tumblr.com/
+quickmark v https://vimeo.com/
+quickmark w https://wolframalpha.com/
 
-autocmd DocStart www.amazon.com js tri.excmds.urlmodify("-t", "www", "smile")
+" autocmd DocStart www.amazon.com js tri.excmds.urlmodify("-t", "www", "smile")
